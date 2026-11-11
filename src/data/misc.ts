@@ -7,7 +7,7 @@ export const CHECKLIST: string[] = [
   'Leg druppelbevloeiing aan met een kraantimer, en test hem een week voor je weggaat',
   'Koop een grote baal stro (paja) en leg overal 10 cm',
   'Plant een rozemarijn, tijm en oregano: die overleven alles',
-  'Plant knoflook en zaai tuinbonen (okt–nov) en vergeet ze tot de lente',
+  'Plant knoflook en zaai tuinbonen (okt–dec) en vergeet ze tot de lente',
   'Plant pluksla in de herfst',
   'Poot aardappelen in februari',
   'Plant kerstomaten vanaf half april en basilicum in mei, op de druppelslang',

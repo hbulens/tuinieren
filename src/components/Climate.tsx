@@ -34,7 +34,7 @@ export function Climate() {
                 zachte winter op regenwater. Dit is lui tuinieren op zijn best.
               </li>
               <li>
-                <strong>Plant tomaten, basilicum en pompoen in de late lente</strong> (half april–mei). Eerder is op deze
+                <strong>Plant tomaten, basilicum en pompoen in de late lente</strong> (half april–mei). Eerder is
                 riskant: één koude nacht zet ze weken terug.
               </li>
               <li>

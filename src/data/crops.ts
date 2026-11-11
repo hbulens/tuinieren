@@ -39,7 +39,7 @@ export const CROPS: Crop[] = [
       'Bij hoge rassen dief je de zijscheuten (*chupones*) uit die in de "oksel" tussen blad en stengel groeien.',
       'Mulch met stro zodra de grond opgewarmd is.',
     ],
-    harvest: 'Als ze helemaal gekleurd zijn en een beetje zacht aanvoelen, van juni tot oktober.',
+    harvest: 'Als ze helemaal gekleurd zijn en een beetje zacht aanvoelen, van juli tot oktober.',
     problems: [
       '**Zwarte onderkant aan de vrucht** (neusrot): onregelmatig water geven. Houd het gelijkmatig.',
       '**Kleine gangetjes in blad of vrucht:** de Tuta absoluta-mot. Verwijder aangetaste bladeren en vraag in de vivero naar een feromonenval.',
@@ -115,7 +115,7 @@ export const CROPS: Crop[] = [
     name: 'Sla', icon: 'lettuce', es: 'Lechuga', levelText: 'Het makkelijkst. Begin hiermee',
     lazy: 2,
     lazyNote: 'In de winter geeft de regen vaak genoeg water. Kies pluksla (hoja de roble) en pluk de buitenste bladeren: één keer planten, wekenlang oogsten. Vergeet het om de 2 weken bijplanten.',
-    stats: stats('Volle zon in de winter, wat schaduw vanaf mei', '25–30 cm', 'Weinig en vaak (ondiepe wortels)', 'Planten oktober–april'),
+    stats: stats('Volle zon in de winter, wat schaduw vanaf mei', '25–30 cm', 'Weinig en vaak (ondiepe wortels)', 'Planten oktober–maart'),
     steps: [
       'Het makkelijkst: koop een bakje jonge plantjes (*plantones*). Ze zijn goedkoop en in de herfst overal te koop.',
       'Plant zo dat de voet van de bladeren **op** de grond zit. Te diep geplant gaat hij rotten.',
