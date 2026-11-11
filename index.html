@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Huerto Viñuela</title>
-<meta name="description" content="A beginner's vegetable and herb garden guide for La Viñuela, Axarquía (Málaga).">
+<meta name="description" content="Een moestuingids voor beginners in La Viñuela, Axarquía (Málaga).">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,8 +20,8 @@
     --accent-soft: #f6e1d6;
     --olive: #5d6b2f;
     --olive-soft: #e7ead6;
-    --sow: #c99a2e;         /* seed / straw */
-    --plant: #5d8a3a;       /* green */
+    --sow: #c99a2e;         /* zaad / stro */
+    --plant: #5d8a3a;       /* groen */
     --harvest: #b5532f;     /* terracotta */
     --now: #fff1c9;
     --shadow: 0 1px 2px rgba(60, 45, 20, .06), 0 4px 16px rgba(60, 45, 20, .06);
@@ -76,13 +76,13 @@
   .grid-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
   .grid-2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
 
-  /* Climate facts */
+  /* Klimaat */
   .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 24px 0; }
   .fact { background: var(--surface-2); border-radius: 12px; padding: 14px 16px; }
   .fact b { display: block; font-family: Fraunces, Georgia, serif; font-size: 1.35rem; }
   .fact span { color: var(--muted); font-size: .875rem; }
 
-  /* This month */
+  /* Deze maand */
   .month-picker { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 20px; }
   .month-picker button {
     font: inherit; font-size: .875rem; padding: 6px 12px; border-radius: 999px; cursor: pointer;
@@ -97,7 +97,7 @@
   .task-cols ul { margin: 0; padding-left: 1.1em; }
   .task-cols li { margin-bottom: 4px; }
 
-  /* Calendar */
+  /* Kalender */
   .cal-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
   table.cal { border-collapse: collapse; width: 100%; min-width: 760px; font-size: .875rem; }
   table.cal th, table.cal td { padding: 8px 4px; text-align: center; border-bottom: 1px solid var(--border); }
@@ -115,7 +115,7 @@
   .legend i { display: inline-block; width: 18px; height: 8px; border-radius: 4px; margin-right: 6px; vertical-align: middle; }
   .bonus-tag { font-size: .7rem; font-weight: 600; color: var(--olive); background: var(--olive-soft); padding: 1px 6px; border-radius: 999px; margin-left: 4px; }
 
-  /* Crop cards */
+  /* Gewaskaarten */
   .crop { display: flex; flex-direction: column; }
   .crop header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 4px; }
   .crop .es { color: var(--muted); font-style: italic; font-size: .9rem; }
@@ -140,14 +140,14 @@
   .progress { height: 8px; background: var(--surface-2); border-radius: 999px; overflow: hidden; margin: 8px 0 16px; }
   .progress div { height: 100%; background: var(--olive); width: 0; transition: width .3s; }
 
-  /* Bed plan */
+  /* Bakplan */
   .bed { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; padding: 8px; background: #8a6a4a; border-radius: 10px; max-width: 420px; }
   .bed div { background: #6b4f34; color: #fff; border-radius: 6px; padding: 10px 6px; text-align: center; font-size: .8rem; line-height: 1.3; min-height: 64px; display: flex; align-items: center; justify-content: center; }
   .bed .t { background: #a8432a; } .bed .b { background: #4f7a30; } .bed .l { background: #6f9a3f; }
   .bed .h { background: #7b7f4a; } .bed .p { background: #9a7b3c; } .bed .g { background: #8b8f9c; } .bed .f { background: #5c8a5a; }
   .bed .span2 { grid-column: span 2; }
 
-  /* Pots */
+  /* Potten */
   .pot-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 12px 0 16px; }
   .pot-form label { display: flex; flex-direction: column; gap: 4px; font-size: .8rem; color: var(--muted); font-weight: 500; }
   .pot-form label[hidden] { display: none; }
@@ -161,7 +161,7 @@
   .rules { padding-left: 1.2em; margin: 0 0 12px; font-size: .94rem; }
   .rules li { margin-bottom: 8px; }
 
-  /* Glossary */
+  /* Woordenlijst */
   .gloss { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 8px 24px; margin: 0; }
   .gloss div { padding: 8px 0; border-bottom: 1px dashed var(--border); }
   .gloss dt { font-weight: 600; }
@@ -177,191 +177,191 @@
 </style>
 </head>
 <body>
-<button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">Theme</button>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Donkere modus aan/uit">Thema</button>
 
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow">La Viñuela · Axarquía · Málaga</div>
-    <h1>My <em>huerto</em> in Viñuela</h1>
-    <p class="lead">A beginner's guide to growing tomatoes, potatoes, butternut squash, lettuce, basil and other herbs in a hot, dry, mild-wintered corner of southern Spain. What to do, when to do it, and what goes wrong.</p>
-    <nav class="toc" aria-label="Contents">
-      <a href="#now">This month</a>
-      <a href="#climate">Your climate</a>
-      <a href="#basics">Beginner basics</a>
-      <a href="#pots">Growing in pots</a>
-      <a href="#calendar">Planting calendar</a>
-      <a href="#crops">Crop guides</a>
-      <a href="#bed">First bed plan</a>
-      <a href="#start">Getting started checklist</a>
-      <a href="#words">Spanish garden words</a>
+    <h1>Mijn <em>huerto</em> in Viñuela</h1>
+    <p class="lead">Een gids voor beginners om tomaten, aardappelen, butternutpompoen, sla, basilicum en andere kruiden te kweken in een warme, droge hoek van Zuid-Spanje met zachte winters. Wat je moet doen, wanneer, en wat er misgaat.</p>
+    <nav class="toc" aria-label="Inhoud">
+      <a href="#now">Deze maand</a>
+      <a href="#climate">Je klimaat</a>
+      <a href="#basics">De basis</a>
+      <a href="#pots">Kweken in potten</a>
+      <a href="#calendar">Zaaikalender</a>
+      <a href="#crops">Gewassen</a>
+      <a href="#bed">Plan voor je eerste bak</a>
+      <a href="#start">Checklist om te starten</a>
+      <a href="#words">Spaanse tuinwoorden</a>
     </nav>
   </div>
 </header>
 
 <main>
-<!-- THIS MONTH -->
+<!-- DEZE MAAND -->
 <section id="now">
   <div class="wrap">
-    <h2>What to do this month</h2>
-    <p class="muted">It opens on the current month. Pick any month to look ahead.</p>
-    <div class="month-picker" id="monthPicker" role="group" aria-label="Choose month"></div>
+    <h2>Wat te doen deze maand</h2>
+    <p class="muted">De pagina opent op de huidige maand. Kies een andere maand om vooruit te kijken.</p>
+    <div class="month-picker" id="monthPicker" role="group" aria-label="Kies een maand"></div>
     <div class="card month-panel" id="monthPanel" aria-live="polite"></div>
   </div>
 </section>
 
-<!-- CLIMATE -->
+<!-- KLIMAAT -->
 <section id="climate">
   <div class="wrap">
-    <h2>Your climate in Viñuela</h2>
-    <p class="lead">Viñuela sits at roughly 200–300 m, inland from Torre del Mar, by the reservoir. The climate is subtropical Mediterranean: <strong>winters are your second growing season, and summer is the hard one.</strong> If you learn one thing, learn that. Gardening here runs on a different calendar from northern Europe.</p>
+    <h2>Je klimaat in Viñuela</h2>
+    <p class="lead">Viñuela ligt op zo'n 200–300 m hoogte, landinwaarts van Torre del Mar, bij het stuwmeer. Het klimaat is subtropisch-mediterraan: <strong>de winter is je tweede groeiseizoen, en de zomer is het moeilijke seizoen.</strong> Als je één ding onthoudt, dan dit. Tuinieren volgt hier een andere kalender dan in Noord-Europa.</p>
     <div class="facts">
-      <div class="fact"><b>~17–18 °C</b><span>winter daytime highs. Lettuce and herbs love this</span></div>
-      <div class="fact"><b>32–38 °C</b><span>summer highs. Tomatoes stop setting fruit above ~35 °C</span></div>
-      <div class="fact"><b>Rare frost</b><span>a few cold clear nights in Jan–Feb at most</span></div>
-      <div class="fact"><b>Oct → Apr</b><span>almost all the rain falls in this window</span></div>
-      <div class="fact"><b>Jun → Sep</b><span>practically zero rain, so you water everything</span></div>
-      <div class="fact"><b>Terral</b><span>a hot, dry wind from the north that can scorch plants in a day</span></div>
+      <div class="fact"><b>~17–18 °C</b><span>overdag in de winter. Sla en kruiden doen het hier prima mee</span></div>
+      <div class="fact"><b>32–38 °C</b><span>in de zomer. Boven ~35 °C zetten tomaten geen vruchten meer</span></div>
+      <div class="fact"><b>Zelden vorst</b><span>hooguit een paar koude, heldere nachten in jan–feb</span></div>
+      <div class="fact"><b>Okt → apr</b><span>bijna alle regen valt in deze periode</span></div>
+      <div class="fact"><b>Jun → sep</b><span>zo goed als geen regen, dus je geeft alles water</span></div>
+      <div class="fact"><b>Terral</b><span>een hete, droge wind uit het noorden die planten op één dag kan verschroeien</span></div>
     </div>
     <div class="grid grid-2">
       <div class="card">
-        <h3>What this means for you</h3>
+        <h3>Wat dit voor jou betekent</h3>
         <ul>
-          <li><strong>Plant lettuce, herbs, broad beans and garlic in autumn</strong> (Oct–Nov). They grow through the mild winter with free rainwater.</li>
-          <li><strong>Plant tomatoes, basil and squash in spring</strong> (Mar–May), so they're well rooted before the heat.</li>
-          <li><strong>Potatoes get two seasons:</strong> plant in Jan–Feb (harvest May–Jun) or in Aug–Sep (harvest Nov–Dec).</li>
-          <li><strong>July and August are for survival, not planting.</strong> Water at dawn, mulch, and shade.</li>
+          <li><strong>Plant sla, kruiden, tuinbonen en knoflook in de herfst</strong> (okt–nov). Ze groeien door de zachte winter met gratis regenwater.</li>
+          <li><strong>Plant tomaten, basilicum en pompoen in de lente</strong> (mrt–mei), zodat ze goed geworteld zijn voor de hitte komt.</li>
+          <li><strong>Aardappelen hebben twee seizoenen:</strong> poten in jan–feb (oogst mei–jun) of in aug–sep (oogst nov–dec).</li>
+          <li><strong>Juli en augustus draaien om overleven, niet om planten.</strong> Water geven bij zonsopgang, mulchen en schaduw voorzien.</li>
         </ul>
       </div>
       <div class="card">
-        <h3>Local things to watch out for</h3>
+        <h3>Lokale aandachtspunten</h3>
         <ul>
-          <li><strong>Water is scarce.</strong> The Axarquía has had serious droughts and the Viñuela reservoir has run very low. Drip irrigation and mulch aren't optional extras here.</li>
-          <li><strong>Wild boar (jabalí) and rabbits</strong> raid gardens in the campo. A sturdy fence, dug in a little, protects months of work.</li>
-          <li><strong>Snails and slugs</strong> come out in force after the first autumn rains.</li>
-          <li><strong>Soil</strong> on the hillsides is often stony slate (pizarra) or heavy clay, usually alkaline. Feed it well with compost or manure.</li>
+          <li><strong>Water is schaars.</strong> De Axarquía heeft zware droogtes gekend en het stuwmeer van Viñuela stond erg laag. Druppelbevloeiing en mulch zijn hier geen luxe.</li>
+          <li><strong>Wilde zwijnen (jabalí) en konijnen</strong> plunderen tuinen op het platteland. Een stevig hek, een stukje ingegraven, beschermt maanden werk.</li>
+          <li><strong>Slakken</strong> komen massaal tevoorschijn na de eerste herfstregens.</li>
+          <li><strong>De grond</strong> op de hellingen is vaak steenachtige leisteen (pizarra) of zware klei, meestal kalkrijk. Geef ze veel compost of mest.</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- BASICS -->
+<!-- DE BASIS -->
 <section id="basics">
   <div class="wrap">
-    <h2>Beginner basics</h2>
-    <p class="lead">Six habits that matter more than anything else. Get these right and most crops will forgive your other mistakes.</p>
+    <h2>De basis voor beginners</h2>
+    <p class="lead">Zes gewoontes die belangrijker zijn dan al de rest. Als je deze goed doet, vergeven de meeste gewassen je andere fouten.</p>
     <div class="grid grid-3">
       <div class="card">
-        <h3>1. Start small</h3>
-        <p>One raised bed (about 1.2 × 2.4 m) plus a few large pots is plenty for year one. A small, well-watered garden beats a big neglected one. You can always expand next autumn.</p>
+        <h3>1. Begin klein</h3>
+        <p>Eén verhoogde bak (ongeveer 1,2 × 2,4 m) plus een paar grote potten is ruim genoeg voor het eerste jaar. Een kleine tuin die goed water krijgt, is beter dan een grote die verwaarloosd wordt. Volgend najaar kun je altijd uitbreiden.</p>
       </div>
       <div class="card">
-        <h3>2. Pick the right spot</h3>
-        <p>Vegetables need <strong>at least 6 hours of direct sun</strong>. In summer, though, a spot that gets shade after about 4 pm is ideal. Put it close to a tap: you'll be watering every day in July.</p>
+        <h3>2. Kies de juiste plek</h3>
+        <p>Groenten hebben <strong>minstens 6 uur directe zon</strong> nodig. In de zomer is een plek die na 16 uur in de schaduw ligt wel ideaal. Zorg dat er een kraan in de buurt is: in juli geef je elke dag water.</p>
       </div>
       <div class="card">
-        <h3>3. Feed the soil</h3>
-        <p>Mix in a generous layer (5–10 cm) of <strong>compost or well-rotted manure</strong> (<em>estiércol</em>) before each season. On stony or clay ground, a raised bed filled with good soil saves a lot of frustration.</p>
+        <h3>3. Voed de grond</h3>
+        <p>Werk voor elk seizoen een flinke laag (5–10 cm) <strong>compost of goed verteerde mest</strong> (<em>estiércol</em>) onder. Op steenachtige of kleiige grond bespaart een verhoogde bak met goede aarde je veel frustratie.</p>
       </div>
       <div class="card">
-        <h3>4. Drip irrigation + timer</h3>
-        <p>A simple <strong>drip kit with a tap timer</strong> (<em>riego por goteo + programador</em>) from any garden centre is the best money you'll spend. Water <strong>at dawn</strong>: deeply and less often is better than a daily sprinkle.</p>
+        <h3>4. Druppelbevloeiing + timer</h3>
+        <p>Een eenvoudige <strong>druppelset met een kraantimer</strong> (<em>riego por goteo + programador</em>) uit het tuincentrum is het beste geld dat je kunt uitgeven. Geef water <strong>bij zonsopgang</strong>: liever diep en minder vaak dan elke dag een beetje.</p>
       </div>
       <div class="card">
-        <h3>5. Mulch everything</h3>
-        <p>Cover the bare soil around plants with 5–10 cm of <strong>straw</strong> (<em>paja</em>), dry leaves or woodchip. The soil stays cool and moist, weeds stay down, and you can cut watering by up to half.</p>
+        <h3>5. Mulch alles</h3>
+        <p>Bedek de kale grond rond de planten met 5–10 cm <strong>stro</strong> (<em>paja</em>), droge bladeren of houtsnippers. De grond blijft koel en vochtig, onkruid blijft weg, en je hebt tot de helft minder water nodig.</p>
       </div>
       <div class="card">
-        <h3>6. Buy plants, not seeds (at first)</h3>
-        <p>Young plants (<em>plantones</em>) from a local <strong>vivero</strong> or village market are cheap and nearly guarantee success. Try seeds for the easy ones (butternut, coriander, broad beans) and graduate to more later.</p>
+        <h3>6. Koop plantjes, geen zaden (in het begin)</h3>
+        <p>Jonge plantjes (<em>plantones</em>) uit een lokale <strong>vivero</strong> of van de dorpsmarkt zijn goedkoop en bijna een garantie op succes. Probeer zaden voor de makkelijke gewassen (butternut, koriander, tuinbonen) en ga later verder.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- POTS -->
+<!-- POTTEN -->
 <section id="pots">
   <div class="wrap">
-    <h2>Growing in pots</h2>
-    <p class="lead">No good ground, or just a terrace? Almost everything on this page grows in containers. In the Viñuela summer, pots dry out and heat up much faster than a bed, so the size and material of the pot matter a lot.</p>
+    <h2>Kweken in potten</h2>
+    <p class="lead">Geen goede grond, of enkel een terras? Bijna alles op deze pagina groeit ook in potten. In de zomer van Viñuela drogen potten wel veel sneller uit en worden ze veel warmer dan een bak, dus de grootte en het materiaal van de pot zijn erg belangrijk.</p>
     <div class="grid grid-2">
       <div class="card">
-        <h3>Pot size calculator</h3>
-        <p class="small muted">Enter your pot's inside size to see roughly how much soil it holds and what will grow in it.</p>
+        <h3>Potgrootte berekenen</h3>
+        <p class="small muted">Vul de binnenmaten van je pot in en zie hoeveel aarde erin gaat en wat erin kan groeien.</p>
         <div class="pot-form">
-          <label>Shape
-            <select id="potShape"><option value="round">Round pot</option><option value="box">Rectangular trough</option></select>
+          <label>Vorm
+            <select id="potShape"><option value="round">Ronde pot</option><option value="box">Rechthoekige bak</option></select>
           </label>
           <label id="lblDia">Diameter (cm)<input type="number" id="potDia" value="35" min="5" max="200"></label>
-          <label id="lblLen" hidden>Length (cm)<input type="number" id="potLen" value="60" min="5" max="300"></label>
-          <label id="lblWid" hidden>Width (cm)<input type="number" id="potWid" value="30" min="5" max="200"></label>
-          <label>Depth (cm)<input type="number" id="potDep" value="30" min="5" max="150"></label>
+          <label id="lblLen" hidden>Lengte (cm)<input type="number" id="potLen" value="60" min="5" max="300"></label>
+          <label id="lblWid" hidden>Breedte (cm)<input type="number" id="potWid" value="30" min="5" max="200"></label>
+          <label>Diepte (cm)<input type="number" id="potDep" value="30" min="5" max="150"></label>
         </div>
         <div class="pot-result" id="potResult" aria-live="polite"></div>
       </div>
       <div class="card">
-        <h3>Five rules for pots in a hot climate</h3>
+        <h3>Vijf regels voor potten in een warm klimaat</h3>
         <ol class="rules">
-          <li><strong>Use bagged potting soil (<em>sustrato</em>), never garden soil.</strong> Garden soil, especially local clay, sets like brick in a pot and drowns roots.</li>
-          <li><strong>Bigger is better.</strong> Small pots can dry out in a single July afternoon. Go for at least 20 litres for tomatoes.</li>
-          <li><strong>Avoid dark plastic in full sun.</strong> It heats up and cooks the roots. Terracotta, wood, light-coloured or fabric pots stay cooler. Terracotta and fabric do dry out faster, though.</li>
-          <li><strong>Mulch the top</strong> with 3–5 cm of straw, bark or gravel, just like in a bed.</li>
-          <li><strong>Water until it runs out of the bottom,</strong> then wait until the top 2–3 cm feel dry. In a summer heatwave, big pots may need water every day, and small ones twice a day.</li>
+          <li><strong>Gebruik potgrond uit een zak (<em>sustrato</em>), nooit tuinaarde.</strong> Tuinaarde, zeker de lokale klei, wordt in een pot keihard en verstikt de wortels.</li>
+          <li><strong>Hoe groter, hoe beter.</strong> Kleine potten kunnen op één julinamiddag uitdrogen. Neem minstens 20 liter voor tomaten.</li>
+          <li><strong>Vermijd donker plastic in de volle zon.</strong> Het warmt op en kookt de wortels. Terracotta, hout, lichte of stoffen potten blijven koeler. Terracotta en stof drogen wel sneller uit.</li>
+          <li><strong>Mulch de bovenkant</strong> met 3–5 cm stro, schors of grind, net zoals in een bak.</li>
+          <li><strong>Geef water tot het onderaan uit de pot loopt,</strong> en wacht dan tot de bovenste 2–3 cm droog aanvoelen. Tijdens een hittegolf hebben grote potten misschien elke dag water nodig, en kleine twee keer per dag.</li>
         </ol>
-        <p class="small muted" style="margin:0">Every pot needs drainage holes. Never leave a pot standing in a saucer full of water.</p>
+        <p class="small muted" style="margin:0">Elke pot heeft afvoergaten nodig. Laat een pot nooit in een schotel vol water staan.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CALENDAR -->
+<!-- KALENDER -->
 <section id="calendar">
   <div class="wrap">
-    <h2>Planting calendar for Viñuela</h2>
-    <p class="lead">Timings are approximate for the Axarquía at low altitude and shift a week or two with the weather. The current month is highlighted.</p>
+    <h2>Zaaikalender voor Viñuela</h2>
+    <p class="lead">De periodes zijn bij benadering, voor de lager gelegen Axarquía, en schuiven een week of twee op met het weer. De huidige maand is gemarkeerd.</p>
     <div class="cal-scroll">
       <table class="cal" id="calTable"></table>
     </div>
     <div class="legend">
-      <span><i style="background:var(--sow)"></i>Sow seeds</span>
-      <span><i style="background:var(--plant)"></i>Plant out (plants, tubers, cloves)</span>
-      <span><i style="background:var(--harvest)"></i>Harvest</span>
+      <span><i style="background:var(--sow)"></i>Zaaien</span>
+      <span><i style="background:var(--plant)"></i>Uitplanten (plantjes, pootaardappelen, teentjes)</span>
+      <span><i style="background:var(--harvest)"></i>Oogsten</span>
     </div>
   </div>
 </section>
 
-<!-- CROPS -->
+<!-- GEWASSEN -->
 <section id="crops">
   <div class="wrap">
-    <h2>Crop guides</h2>
-    <p class="lead">For each crop: what it needs, how to plant it step by step, when it's ready, and what usually goes wrong.</p>
+    <h2>Gewassen</h2>
+    <p class="lead">Per gewas: wat het nodig heeft, hoe je het stap voor stap plant, wanneer het klaar is, en wat er meestal misgaat.</p>
     <div class="grid grid-2" id="cropGrid"></div>
   </div>
 </section>
 
-<!-- BED PLAN -->
+<!-- BAKPLAN -->
 <section id="bed">
   <div class="wrap">
-    <h2>Example first bed (1.2 × 2.4 m)</h2>
-    <p class="lead">The same bed works all year: winter crops in autumn, summer crops in spring. Rotate: don't put tomatoes or potatoes in the same spot two years in a row (they're related and share diseases).</p>
+    <h2>Voorbeeld voor je eerste bak (1,2 × 2,4 m)</h2>
+    <p class="lead">Dezelfde bak werkt het hele jaar: wintergewassen in de herfst, zomergewassen in de lente. Wissel af: zet tomaten of aardappelen niet twee jaar na elkaar op dezelfde plek (ze zijn familie en delen ziektes).</p>
     <div class="grid grid-2">
       <div class="card">
-        <h3>Winter layout <span class="muted small">(plant Oct–Nov)</span></h3>
-        <div class="bed" aria-label="Winter bed plan">
-          <div class="f span2">Broad beans (habas)</div><div class="g span2">Garlic (ajo)</div>
-          <div class="l">Lettuce</div><div class="l">Lettuce</div><div class="l">Lettuce</div><div class="l">Lettuce</div>
-          <div class="h">Parsley</div><div class="h">Coriander</div><div class="l">Lettuce</div><div class="l">Lettuce</div>
+        <h3>Winterindeling <span class="muted small">(planten okt–nov)</span></h3>
+        <div class="bed" aria-label="Winterplan voor de bak">
+          <div class="f span2">Tuinbonen (habas)</div><div class="g span2">Knoflook (ajo)</div>
+          <div class="l">Sla</div><div class="l">Sla</div><div class="l">Sla</div><div class="l">Sla</div>
+          <div class="h">Peterselie</div><div class="h">Koriander</div><div class="l">Sla</div><div class="l">Sla</div>
         </div>
-        <p class="small muted" style="margin-top:12px">Plant lettuces 2–3 at a time, every couple of weeks, so they don't all mature at once.</p>
+        <p class="small muted" style="margin-top:12px">Plant telkens 2–3 slaplantjes om de paar weken, zodat ze niet allemaal tegelijk klaar zijn.</p>
       </div>
       <div class="card">
-        <h3>Summer layout <span class="muted small">(plant Mar–May)</span></h3>
-        <div class="bed" aria-label="Summer bed plan">
-          <div class="t">Tomato</div><div class="b">Basil</div><div class="t">Tomato</div><div class="b">Basil</div>
-          <div class="t">Tomato</div><div class="h">Herbs</div><div class="t">Tomato</div><div class="h">Herbs</div>
-          <div class="p span2">Potatoes (Jan–Jun) → then lettuce in shade (autumn)</div><div class="b span2">Basil / Herbs</div>
+        <h3>Zomerindeling <span class="muted small">(planten mrt–mei)</span></h3>
+        <div class="bed" aria-label="Zomerplan voor de bak">
+          <div class="t">Tomaat</div><div class="b">Basilicum</div><div class="t">Tomaat</div><div class="b">Basilicum</div>
+          <div class="t">Tomaat</div><div class="h">Kruiden</div><div class="t">Tomaat</div><div class="h">Kruiden</div>
+          <div class="p span2">Aardappelen (jan–jun) → daarna sla in de schaduw (herfst)</div><div class="b span2">Basilicum / kruiden</div>
         </div>
-        <p class="small muted" style="margin-top:12px">Butternut takes 1–2 m² per plant, so give it its own patch at the edge or let it trail along a fence. Basil next to tomatoes is a classic pairing.</p>
+        <p class="small muted" style="margin-top:12px">Butternut neemt 1–2 m² per plant in, dus geef hem een eigen plekje aan de rand of laat hem langs een hek ranken. Basilicum naast tomaten is een klassieke combinatie.</p>
       </div>
     </div>
   </div>
@@ -370,21 +370,21 @@
 <!-- CHECKLIST -->
 <section id="start">
   <div class="wrap">
-    <h2>Getting started checklist</h2>
-    <p class="muted">Your ticks are saved in this browser.</p>
+    <h2>Checklist om te starten</h2>
+    <p class="muted">Je vinkjes worden in deze browser bewaard.</p>
     <div class="card" style="max-width:720px">
-      <div class="small muted" id="progressLabel">0 of 0 done</div>
+      <div class="small muted" id="progressLabel">0 van 0 gedaan</div>
       <div class="progress"><div id="progressBar"></div></div>
       <ul class="checklist" id="checklist"></ul>
     </div>
   </div>
 </section>
 
-<!-- GLOSSARY -->
+<!-- WOORDENLIJST -->
 <section id="words">
   <div class="wrap">
-    <h2>Spanish garden words</h2>
-    <p class="lead">Handy at the vivero, the market, or when the neighbour leans over the wall with advice. In the Axarquía, there's always advice.</p>
+    <h2>Spaanse tuinwoorden</h2>
+    <p class="lead">Handig in de vivero, op de markt, of wanneer de buurman over de muur leunt met goede raad. In de Axarquía is er altijd goede raad.</p>
     <dl class="gloss" id="gloss"></dl>
   </div>
 </section>
@@ -392,42 +392,42 @@
 
 <footer>
   <div class="wrap">
-    Made for my own huerto in La Viñuela. Timings are general guidance for the Axarquía. Your neighbours' experience beats any calendar, so ask them.
+    Gemaakt voor mijn eigen huerto in La Viñuela. De periodes zijn algemene richtlijnen voor de Axarquía. De ervaring van je buren is beter dan eender welke kalender, dus vraag het hen.
   </div>
 </footer>
 
 <script>
-const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-const MONTHS_FULL = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const MONTHS = ['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+const MONTHS_FULL = ['Januari','Februari','Maart','April','Mei','Juni','Juli','Augustus','September','Oktober','November','December'];
 const NOW = new Date().getMonth() + 1; // 1–12
 
-/* ---------- Calendar data ---------- */
+/* ---------- Kalendergegevens ---------- */
 const CAL = [
-  { name: 'Tomatoes', es: 'tomate', sow: [1,2], plant: [3,4,5], harvest: [6,7,8,9,10] },
-  { name: 'Potatoes', es: 'patata', plant: [1,2,8,9], harvest: [5,6,11,12] },
-  { name: 'Basil', es: 'albahaca', sow: [3,4,5], plant: [4,5,6], harvest: [6,7,8,9,10] },
-  { name: 'Butternut squash', es: 'calabaza', sow: [4,5,6], plant: [5,6], harvest: [8,9,10] },
-  { name: 'Lettuce', es: 'lechuga', sow: [9,10,11,12,1,2,3], plant: [10,11,12,1,2,3,4], harvest: [11,12,1,2,3,4,5] },
-  { name: 'Rosemary, thyme, oregano, sage', es: 'hierbas perennes', plant: [10,11,2,3], harvest: [1,2,3,4,5,6,7,8,9,10,11,12] },
-  { name: 'Parsley & coriander', es: 'perejil y cilantro', sow: [9,10,11,2,3], harvest: [11,12,1,2,3,4,5] },
-  { name: 'Garlic', es: 'ajo', bonus: true, plant: [11,12], harvest: [5,6] },
-  { name: 'Broad beans', es: 'habas', bonus: true, sow: [10,11,12], harvest: [2,3,4] },
+  { name: 'Tomaten', es: 'tomate', sow: [1,2], plant: [3,4,5], harvest: [6,7,8,9,10] },
+  { name: 'Aardappelen', es: 'patata', plant: [1,2,8,9], harvest: [5,6,11,12] },
+  { name: 'Basilicum', es: 'albahaca', sow: [3,4,5], plant: [4,5,6], harvest: [6,7,8,9,10] },
+  { name: 'Butternutpompoen', es: 'calabaza', sow: [4,5,6], plant: [5,6], harvest: [8,9,10] },
+  { name: 'Sla', es: 'lechuga', sow: [9,10,11,12,1,2,3], plant: [10,11,12,1,2,3,4], harvest: [11,12,1,2,3,4,5] },
+  { name: 'Rozemarijn, tijm, oregano, salie', es: 'hierbas perennes', plant: [10,11,2,3], harvest: [1,2,3,4,5,6,7,8,9,10,11,12] },
+  { name: 'Peterselie & koriander', es: 'perejil y cilantro', sow: [9,10,11,2,3], harvest: [11,12,1,2,3,4,5] },
+  { name: 'Knoflook', es: 'ajo', bonus: true, plant: [11,12], harvest: [5,6] },
+  { name: 'Tuinbonen', es: 'habas', bonus: true, sow: [10,11,12], harvest: [2,3,4] },
 ];
 
 function renderCalendar() {
   const t = document.getElementById('calTable');
-  let html = '<thead><tr><th scope="col">Crop</th>' +
+  let html = '<thead><tr><th scope="col">Gewas</th>' +
     MONTHS.map((m, i) => `<th scope="col" class="${i + 1 === NOW ? 'now' : ''}">${m}</th>`).join('') +
     '</tr></thead><tbody>';
   for (const c of CAL) {
-    html += `<tr><td>${c.name}${c.bonus ? '<span class="bonus-tag">easy winter extra</span>' : ''}<span class="crop-es">${c.es}</span></td>`;
+    html += `<tr><td>${c.name}${c.bonus ? '<span class="bonus-tag">makkelijk extraatje voor de winter</span>' : ''}<span class="crop-es">${c.es}</span></td>`;
     for (let m = 1; m <= 12; m++) {
       const parts = [];
       const label = [];
-      if (c.sow?.includes(m)) { parts.push('<div class="bar sow"></div>'); label.push('sow'); }
-      if (c.plant?.includes(m)) { parts.push('<div class="bar plant"></div>'); label.push('plant out'); }
-      if (c.harvest?.includes(m)) { parts.push('<div class="bar harvest"></div>'); label.push('harvest'); }
-      const title = label.length ? `${c.name}, ${MONTHS_FULL[m-1]}: ${label.join(', ')}` : '';
+      if (c.sow?.includes(m)) { parts.push('<div class="bar sow"></div>'); label.push('zaaien'); }
+      if (c.plant?.includes(m)) { parts.push('<div class="bar plant"></div>'); label.push('uitplanten'); }
+      if (c.harvest?.includes(m)) { parts.push('<div class="bar harvest"></div>'); label.push('oogsten'); }
+      const title = label.length ? `${c.name}, ${MONTHS_FULL[m-1].toLowerCase()}: ${label.join(', ')}` : '';
       html += `<td class="${m === NOW ? 'now' : ''}" title="${title}"><div class="bars" ${title ? `aria-label="${title}"` : ''}>${parts.join('')}</div></td>`;
     }
     html += '</tr>';
@@ -435,56 +435,56 @@ function renderCalendar() {
   t.innerHTML = html + '</tbody>';
 }
 
-/* ---------- Monthly tasks ---------- */
+/* ---------- Taken per maand ---------- */
 const TASKS = {
-  1: { mood: 'Cool, sometimes wet. Gardening is quiet but the season is starting.',
-    plant: ['Seed potatoes, from late January', 'Lettuce plants', 'Sow tomato seeds indoors on a sunny windowsill (optional, or just buy plants in March)'],
-    harvest: ['Lettuce', 'Parsley, coriander', 'Rosemary, thyme'],
-    care: ['Spread compost on beds you\'ll use for summer crops', 'On rare clear, still nights, cover tender plants with garden fleece', 'Plan your summer: which tomato varieties?'] },
-  2: { mood: 'Almond blossom on the hills. Days lengthen quickly.',
-    plant: ['Last chance for potatoes', 'Lettuce, coriander, parsley', 'Perennial herbs (rosemary, thyme, sage, oregano)'],
-    harvest: ['Lettuce', 'First broad beans (if you planted them)', 'Parsley, coriander'],
-    care: ['Pot up tomato seedlings into bigger pots', 'Dig manure or compost into the summer bed', 'Hand-pick snails after rain'] },
-  3: { mood: 'Spring arrives early here. A big month!',
-    plant: ['Tomatoes: from mid-March, once nights stay above ~10 °C', 'Sow basil indoors', 'Last lettuce plantings before the heat'],
-    harvest: ['Lettuce', 'Broad beans', 'Herbs'],
-    care: ['Earth up potatoes (aporcar) when shoots are ~20 cm', 'Put in a 1.8 m cane next to each tomato', 'Install drip irrigation now, before you need it'] },
-  4: { mood: 'Warm days, comfortable nights. The best planting weather for summer crops.',
-    plant: ['Tomatoes and basil plants', 'Sow butternut seeds in compost-rich mounds', 'Peppers and courgettes too, if you\'re tempted'],
-    harvest: ['Last lettuces', 'Broad beans', 'Herbs'],
-    care: ['Earth up potatoes a second time', 'Tie tomatoes to canes as they grow', 'Check for aphids on new growth and squash them or spray with soapy water'] },
-  5: { mood: 'Getting hot. Lettuce starts to bolt; summer crops take off.',
-    plant: ['Butternut plants or seeds (last chance)', 'More basil'],
-    harvest: ['Early potatoes, once the plants flower', 'Garlic, when lower leaves turn yellow', 'Last lettuce, before it turns bitter'],
-    care: ['Pinch out tomato side shoots (chupones)', 'Mulch thickly with straw before the heat arrives', 'Pinch basil flower buds off'] },
-  6: { mood: 'Summer is here. The garden needs water every day or two.',
-    plant: ['Nothing new is needed. Just keep things alive and growing'],
-    harvest: ['Potatoes, about 2 weeks after the foliage dies back', 'First tomatoes!', 'Basil, generously'],
-    care: ['Water deeply at dawn', 'Watch for whitefly and Tuta (tiny caterpillar tunnels in tomato leaves)', 'Keep tying tomatoes in'] },
-  7: { mood: 'Peak heat and possible terral wind. Survival mode.',
-    plant: ['Nothing. It\'s too hot to establish new plants'],
-    harvest: ['Tomatoes, daily', 'Basil (make pesto and freeze it)'],
-    care: ['Shade net (malla de sombreo, 30–50%) over tomatoes during heatwaves', 'Tomatoes may stop setting fruit above 35 °C. That\'s normal, and they restart in September', 'Watch butternut leaves for white powdery mildew'] },
-  8: { mood: 'Still hot, but start thinking about autumn.',
-    plant: ['Autumn potatoes, late August', 'Sow lettuce in trays in the shade for autumn'],
-    harvest: ['Tomatoes', 'Basil', 'Early butternuts if the skin is hard'],
-    care: ['Keep watering religiously', 'Order or buy autumn seeds and plants', 'Start a compost pile for autumn clearing'] },
-  9: { mood: 'Nights cool down. The second, easier season begins.',
-    plant: ['Autumn potatoes', 'Sow lettuce, parsley and coriander'],
-    harvest: ['Butternut: skin tan and hard, stem dry and corky', 'Late tomatoes', 'Basil'],
-    care: ['Cure butternuts in the sun for 1–2 weeks so they store for months', 'The first rains bring snails, so protect seedlings', 'Clear any exhausted summer plants'] },
-  10: { mood: 'The best planting month of the year. Warm soil and rain on the way.',
-    plant: ['Lettuce plants', 'Perennial herbs (rosemary, thyme, oregano, sage)', 'Sow broad beans', 'Parsley, coriander'],
-    harvest: ['Last tomatoes and butternuts', 'Basil: harvest it all before it gets cold'],
-    care: ['Pull out summer crops and compost them', 'Dig compost into beds', 'Set up a water butt to collect rain'] },
-  11: { mood: 'Mild and green after the rains. A great month to start a garden.',
-    plant: ['Garlic cloves, pointy end up, 15 cm apart', 'Broad beans', 'Lettuce plants: a few every 2 weeks', 'Parsley, coriander, perennial herbs'],
-    harvest: ['First lettuces', 'Herbs', 'Autumn potatoes (late Nov–Dec)'],
-    care: ['Earth up autumn potatoes', 'Hand-pick slugs and snails at night with a torch', 'Build your first raised bed if you haven\'t yet!'] },
-  12: { mood: 'Short days, mild sun. Low maintenance.',
-    plant: ['Garlic (last chance)', 'Broad beans', 'Lettuce'],
-    harvest: ['Autumn potatoes', 'Lettuce', 'Parsley, coriander, herbs'],
-    care: ['Water only if it hasn\'t rained for 1–2 weeks', 'Top up mulch', 'Choose tomato seeds for January sowing'] },
+  1: { mood: 'Koel, soms nat. Het is rustig in de tuin, maar het seizoen komt op gang.',
+    plant: ['Pootaardappelen, vanaf eind januari', 'Slaplantjes', 'Tomatenzaad binnen op een zonnige vensterbank zaaien (optioneel, of koop gewoon plantjes in maart)'],
+    harvest: ['Sla', 'Peterselie, koriander', 'Rozemarijn, tijm'],
+    care: ['Strooi compost op de bakken die je in de zomer gebruikt', 'Bedek gevoelige planten met vliesdoek in de zeldzame heldere, windstille nachten', 'Plan je zomer: welke tomatenrassen?'] },
+  2: { mood: 'Amandelbloesem op de heuvels. De dagen lengen snel.',
+    plant: ['Laatste kans voor aardappelen', 'Sla, koriander, peterselie', 'Vaste kruiden (rozemarijn, tijm, salie, oregano)'],
+    harvest: ['Sla', 'Eerste tuinbonen (als je ze geplant hebt)', 'Peterselie, koriander'],
+    care: ['Verpot de tomatenzaailingen naar grotere potjes', 'Werk mest of compost in de zomerbak', 'Raap slakken op na regen'] },
+  3: { mood: 'De lente komt hier vroeg. Een drukke maand!',
+    plant: ['Tomaten: vanaf half maart, zodra de nachten boven ~10 °C blijven', 'Basilicum binnen zaaien', 'De laatste sla planten voor de hitte'],
+    harvest: ['Sla', 'Tuinbonen', 'Kruiden'],
+    care: ['Aardappelen aanaarden (aporcar) als de scheuten ~20 cm zijn', 'Zet een stok van 1,8 m naast elke tomaat', 'Leg nu de druppelbevloeiing aan, voor je ze nodig hebt'] },
+  4: { mood: 'Warme dagen, aangename nachten. Het beste plantweer voor zomergewassen.',
+    plant: ['Tomaten- en basilicumplantjes', 'Butternutzaad zaaien in heuveltjes met veel compost', 'Ook paprika en courgette, als je zin hebt'],
+    harvest: ['Laatste sla', 'Tuinbonen', 'Kruiden'],
+    care: ['Aardappelen een tweede keer aanaarden', 'Bind de tomaten aan de stok terwijl ze groeien', 'Controleer jonge scheuten op bladluis en plet ze of spuit met zeepwater'] },
+  5: { mood: 'Het wordt warm. Sla schiet door, zomergewassen komen op gang.',
+    plant: ['Butternutplantjes of -zaad (laatste kans)', 'Meer basilicum'],
+    harvest: ['Vroege aardappelen, zodra de planten bloeien', 'Knoflook, als de onderste bladeren geel worden', 'Laatste sla, voor ze bitter wordt'],
+    care: ['Dief de zijscheuten van tomaten uit (chupones)', 'Mulch dik met stro voor de hitte komt', 'Knijp de bloemknoppen van basilicum af'] },
+  6: { mood: 'De zomer is er. De tuin heeft om de dag of elke dag water nodig.',
+    plant: ['Niets nieuws nodig. Houd alles gewoon in leven en aan het groeien'],
+    harvest: ['Aardappelen, zo\'n 2 weken nadat het loof afsterft', 'Eerste tomaten!', 'Basilicum, royaal'],
+    care: ['Geef bij zonsopgang diep water', 'Let op witte vlieg en Tuta (kleine gangetjes in tomatenbladeren)', 'Blijf de tomaten aanbinden'] },
+  7: { mood: 'Piekhitte en soms terral. Overlevingsmodus.',
+    plant: ['Niets. Het is te warm om nieuwe planten te laten aanslaan'],
+    harvest: ['Tomaten, elke dag', 'Basilicum (maak pesto en vries die in)'],
+    care: ['Schaduwnet (malla de sombreo, 30–50%) over de tomaten tijdens hittegolven', 'Boven 35 °C kunnen tomaten stoppen met vruchtzetting. Dat is normaal, en in september beginnen ze opnieuw', 'Let op wit poeder (meeldauw) op de butternutbladeren'] },
+  8: { mood: 'Nog steeds heet, maar begin aan de herfst te denken.',
+    plant: ['Herfstaardappelen, eind augustus', 'Sla zaaien in bakjes in de schaduw, voor de herfst'],
+    harvest: ['Tomaten', 'Basilicum', 'Vroege butternuts als de schil hard is'],
+    care: ['Blijf trouw water geven', 'Bestel of koop zaden en plantjes voor de herfst', 'Begin een composthoop voor het herfstopruimen'] },
+  9: { mood: 'De nachten koelen af. Het tweede, makkelijkere seizoen begint.',
+    plant: ['Herfstaardappelen', 'Sla, peterselie en koriander zaaien'],
+    harvest: ['Butternut: schil beige en hard, steel droog en kurkachtig', 'Laatste tomaten', 'Basilicum'],
+    care: ['Laat butternuts 1–2 weken in de zon uitharden, dan blijven ze maanden goed', 'De eerste regen brengt slakken, dus bescherm de zaailingen', 'Ruim uitgeputte zomerplanten op'] },
+  10: { mood: 'De beste plantmaand van het jaar. Warme grond en regen op komst.',
+    plant: ['Slaplantjes', 'Vaste kruiden (rozemarijn, tijm, oregano, salie)', 'Tuinbonen zaaien', 'Peterselie, koriander'],
+    harvest: ['Laatste tomaten en butternuts', 'Basilicum: oogst alles voor het koud wordt'],
+    care: ['Trek de zomergewassen uit en zet ze op de compost', 'Werk compost in de bakken', 'Zet een regenton neer'] },
+  11: { mood: 'Zacht en groen na de regen. Een ideale maand om met een tuin te beginnen.',
+    plant: ['Knoflookteentjes, met de punt naar boven, 15 cm uit elkaar', 'Tuinbonen', 'Slaplantjes: een paar om de 2 weken', 'Peterselie, koriander, vaste kruiden'],
+    harvest: ['Eerste sla', 'Kruiden', 'Herfstaardappelen (eind nov–dec)'],
+    care: ['Herfstaardappelen aanaarden', 'Raap \'s avonds slakken op met een zaklamp', 'Bouw je eerste verhoogde bak, als je dat nog niet gedaan hebt!'] },
+  12: { mood: 'Korte dagen, zachte zon. Weinig onderhoud.',
+    plant: ['Knoflook (laatste kans)', 'Tuinbonen', 'Sla'],
+    harvest: ['Herfstaardappelen', 'Sla', 'Peterselie, koriander, kruiden'],
+    care: ['Geef enkel water als het 1–2 weken niet geregend heeft', 'Vul de mulch aan', 'Kies tomatenzaad om in januari te zaaien'] },
 };
 
 let selectedMonth = NOW;
@@ -502,97 +502,97 @@ function renderMonthPanel() {
   const t = TASKS[selectedMonth];
   const list = a => '<ul>' + a.map(x => `<li>${x}</li>`).join('') + '</ul>';
   document.getElementById('monthPanel').innerHTML = `
-    <h3>${MONTHS_FULL[selectedMonth - 1]}${selectedMonth === NOW ? '<span class="badge">now</span>' : ''}</h3>
+    <h3>${MONTHS_FULL[selectedMonth - 1]}${selectedMonth === NOW ? '<span class="badge">nu</span>' : ''}</h3>
     <p class="muted">${t.mood}</p>
     <div class="task-cols">
-      <div><h4>Plant / sow</h4>${list(t.plant)}</div>
-      <div><h4>Harvest</h4>${list(t.harvest)}</div>
-      <div><h4>Jobs</h4>${list(t.care)}</div>
+      <div><h4>Planten / zaaien</h4>${list(t.plant)}</div>
+      <div><h4>Oogsten</h4>${list(t.harvest)}</div>
+      <div><h4>Klusjes</h4>${list(t.care)}</div>
     </div>`;
 }
 
-/* ---------- Crop guides ---------- */
+/* ---------- Gewassen ---------- */
 const CROPS = [
-  { name: 'Tomatoes', es: 'Tomate', level: 'easy', levelText: 'Easy from plants',
-    stats: { Sun: 'Full sun. Afternoon shade in Jul–Aug helps', Spacing: '50–60 cm apart, rows 80–100 cm', Water: 'Deep and regular. Daily drip in summer', When: 'Plant mid-March to May' },
-    steps: ['Buy young plants in March–April (or sow seeds indoors Jan–Feb).',
-            'Plant <strong>deep</strong>: bury the stem up to the first leaves. It grows extra roots along the buried stem.',
-            'Push a 1.8 m cane (<em>caña</em>) in beside each plant and tie the stem loosely as it grows.',
-            'For tall varieties, pinch out the side shoots (<em>chupones</em>) that grow in the "armpit" between leaf and stem.',
-            'Mulch with straw once the soil has warmed up.'],
-    harvest: 'When fully coloured and slightly soft to the touch, June to October.',
-    problems: ['<strong>Black bottoms on fruit</strong> (blossom end rot): irregular watering. Keep it even.',
-               '<strong>Tiny tunnels in leaves/fruit:</strong> Tuta absoluta moth. Remove affected leaves and ask the vivero for a pheromone trap.',
-               '<strong>Whitefly</strong> under leaves in summer.',
-               '<strong>Flowers drop, no fruit</strong> above ~35 °C. Wait for September.'],
-    tip: 'Start with 2 cherry tomato plants and 2 big ones. Cherry tomatoes are almost foolproof and very productive.',
-    varieties: 'Cherry, Muchamiel, Rosa, Corazón de buey (oxheart), Raf (delicious but fussier)' },
+  { name: 'Tomaten', es: 'Tomate', level: 'easy', levelText: 'Makkelijk met plantjes',
+    stats: { Zon: 'Volle zon. Schaduw in de namiddag helpt in jul–aug', Afstand: '50–60 cm tussen planten, rijen 80–100 cm', Water: 'Diep en regelmatig. Dagelijks druppelen in de zomer', Wanneer: 'Planten van half maart tot mei' },
+    steps: ['Koop jonge plantjes in maart–april (of zaai binnen in jan–feb).',
+            'Plant <strong>diep</strong>: begraaf de stengel tot aan de eerste bladeren. Op het begraven stuk groeien extra wortels.',
+            'Steek een stok van 1,8 m (<em>caña</em>) naast elke plant en bind de stengel losjes vast terwijl hij groeit.',
+            'Bij hoge rassen dief je de zijscheuten (<em>chupones</em>) uit die in de "oksel" tussen blad en stengel groeien.',
+            'Mulch met stro zodra de grond opgewarmd is.'],
+    harvest: 'Als ze helemaal gekleurd zijn en een beetje zacht aanvoelen, van juni tot oktober.',
+    problems: ['<strong>Zwarte onderkant aan de vrucht</strong> (neusrot): onregelmatig water geven. Houd het gelijkmatig.',
+               '<strong>Kleine gangetjes in blad of vrucht:</strong> de Tuta absoluta-mot. Verwijder aangetaste bladeren en vraag in de vivero naar een feromonenval.',
+               '<strong>Witte vlieg</strong> onder de bladeren in de zomer.',
+               '<strong>Bloemen vallen af, geen vruchten</strong> boven ~35 °C. Wacht tot september.'],
+    tip: 'Begin met 2 kerstomatenplanten en 2 grote. Kerstomaten zijn bijna onfeilbaar en geven veel.',
+    varieties: 'Cherry, Muchamiel, Rosa, Corazón de buey (ossenhart), Raf (heerlijk maar lastiger)' },
 
-  { name: 'Potatoes', es: 'Patata', level: 'easy', levelText: 'Easy',
-    stats: { Sun: 'Full sun', Spacing: '30 cm apart, rows 60–70 cm', Water: 'Moderate. Even moisture while flowering', When: 'Plant Jan–Feb or Aug–Sep' },
-    steps: ['Buy certified <strong>seed potatoes</strong> (<em>patata de siembra</em>). Supermarket potatoes can be treated against sprouting or carry disease.',
-            'Optional: "chit" them. Leave them in a light, cool spot for 2–3 weeks until they grow short, sturdy sprouts.',
-            'Plant 10–15 cm deep, sprouts pointing up.',
-            '<strong>Earth up</strong> (<em>aporcar</em>): when plants are ~20 cm tall, pull soil up around the stems, leaving just the top leaves showing. Repeat 2–3 weeks later.',
-            'Stop watering once the leaves turn yellow.'],
-    harvest: 'New potatoes when the plants flower; main crop about 2 weeks after the foliage dies back. Dig in from the side with a fork.',
-    problems: ['<strong>Green potatoes</strong> were exposed to light and are mildly toxic. Earth up better.',
-               '<strong>Colorado beetle:</strong> yellow-and-black striped beetles and orange larvae. Hand-pick daily.',
-               '<strong>Blight/mildew</strong> in damp springs. Brown patches spread on leaves.'],
-    tip: 'If your soil is stony, grow them in a big grow bag or tub. At harvest you just tip it out, with no digging.',
+  { name: 'Aardappelen', es: 'Patata', level: 'easy', levelText: 'Makkelijk',
+    stats: { Zon: 'Volle zon', Afstand: '30 cm tussen planten, rijen 60–70 cm', Water: 'Matig. Gelijkmatig vochtig tijdens de bloei', Wanneer: 'Poten in jan–feb of aug–sep' },
+    steps: ['Koop gecertificeerde <strong>pootaardappelen</strong> (<em>patata de siembra</em>). Aardappelen uit de supermarkt zijn soms behandeld tegen kiemen of dragen ziektes.',
+            'Optioneel: laat ze voorkiemen. Leg ze 2–3 weken op een lichte, koele plek tot ze korte, stevige kiemen hebben.',
+            'Poot ze 10–15 cm diep, met de kiemen naar boven.',
+            '<strong>Aanaarden</strong> (<em>aporcar</em>): als de planten ~20 cm hoog zijn, trek je aarde rond de stengels zodat enkel de bovenste bladeren nog uitsteken. Herhaal 2–3 weken later.',
+            'Stop met water geven zodra de bladeren geel worden.'],
+    harvest: 'Nieuwe aardappelen als de planten bloeien; de hoofdoogst zo\'n 2 weken nadat het loof afsterft. Steek ze van opzij uit met een spitvork.',
+    problems: ['<strong>Groene aardappelen</strong> hebben licht gezien en zijn licht giftig. Beter aanaarden.',
+               '<strong>Coloradokever:</strong> geel-zwart gestreepte kevers en oranje larven. Dagelijks met de hand verwijderen.',
+               '<strong>Phytophthora / meeldauw</strong> in natte lentes. Bruine vlekken verspreiden zich over de bladeren.'],
+    tip: 'Is je grond steenachtig? Kweek ze dan in een grote plantzak of kuip. Bij de oogst kiep je hem gewoon om, zonder te spitten.',
     varieties: 'Spunta, Monalisa, Kennebec, Agria' },
 
-  { name: 'Basil', es: 'Albahaca', level: 'easy', levelText: 'Easy',
-    stats: { Sun: 'Full sun to light shade', Spacing: '25–30 cm. Great in pots', Water: 'Regular. Don\'t let pots dry out', When: 'Plant April–June' },
-    steps: ['Sow indoors in March in small pots, or buy a plant in April.',
-            'Plant out once nights are warm (above ~12 °C). Basil hates cold.',
-            'When it\'s 15 cm tall, pinch off the top just above a pair of leaves. It branches and gets bushy.',
-            'Keep pinching off flower buds all summer, or the leaves get bitter and the plant stops growing.'],
-    harvest: 'Pick from the tops constantly, June–October. It dies with the first cold nights. Make pesto before then.',
-    problems: ['<strong>Cold nights</strong> in early spring: black leaves, stalled growth.',
-               '<strong>Snails</strong> love young plants.',
-               '<strong>Downy mildew:</strong> yellowing with grey fuzz under leaves. Water the soil, not the leaves.'],
-    tip: 'A supermarket basil pot is really 20 seedlings crammed together. Split it into 4–5 clumps and pot each one up for 5 plants.',
-    varieties: 'Genovese (classic pesto), Albahaca fina / de hoja pequeña (compact, tough, the traditional Andalusian windowsill basil), Thai basil' },
+  { name: 'Basilicum', es: 'Albahaca', level: 'easy', levelText: 'Makkelijk',
+    stats: { Zon: 'Volle zon tot lichte schaduw', Afstand: '25–30 cm. Prima in potten', Water: 'Regelmatig. Laat potten niet uitdrogen', Wanneer: 'Planten april–juni' },
+    steps: ['Zaai in maart binnen in kleine potjes, of koop een plant in april.',
+            'Plant buiten zodra de nachten warm zijn (boven ~12 °C). Basilicum haat kou.',
+            'Als hij 15 cm hoog is, knip je de top af net boven een paar bladeren. Zo vertakt hij en wordt hij bossig.',
+            'Knijp de hele zomer de bloemknoppen af, anders worden de bladeren bitter en stopt de plant met groeien.'],
+    harvest: 'Pluk voortdurend van de toppen, juni–oktober. Hij sterft af bij de eerste koude nachten. Maak voor die tijd pesto.',
+    problems: ['<strong>Koude nachten</strong> in het voorjaar: zwarte bladeren, groei valt stil.',
+               '<strong>Slakken</strong> zijn dol op jonge planten.',
+               '<strong>Valse meeldauw:</strong> geel blad met grijs pluis aan de onderkant. Geef water op de grond, niet op de bladeren.'],
+    tip: 'Een basilicumpot uit de supermarkt bestaat eigenlijk uit 20 opeengepakte zaailingen. Verdeel hem in 4–5 plukjes en pot ze elk apart op, dan heb je 5 planten.',
+    varieties: 'Genovese (klassieke pesto), Albahaca fina / de hoja pequeña (compact, sterk, de traditionele Andalusische vensterbankbasilicum), Thaise basilicum' },
 
-  { name: 'Butternut squash', es: 'Calabaza (cacahuete)', level: 'easy', levelText: 'Easy, needs space',
-    stats: { Sun: 'Full sun', Spacing: '1–1.5 m² per plant. Vines spread 2–3 m', Water: 'Deep soak 2–3× per week, at the base', When: 'Sow April–May' },
-    steps: ['Make a small mound and mix in a good spadeful of compost or manure. Squash are hungry.',
-            'Sow 2–3 seeds 2–3 cm deep in each mound. Keep the strongest seedling once they have a few leaves (or buy plants in May).',
-            'Mulch heavily. The big leaves soon shade the soil themselves.',
-            'Female flowers have a tiny squash behind them. If those shrivel, hand-pollinate early in the morning: pick a male flower and dab it into the female one.',
-            'Slip a tile or board under each fruit so it doesn\'t sit on damp soil.'],
-    harvest: 'September–October, when the skin is tan, your fingernail can\'t dent it, and the stem is dry and corky. Cut with 5 cm of stem, cure in the sun 1–2 weeks, and it stores for 3–6 months.',
-    problems: ['<strong>Powdery mildew:</strong> white powder on leaves in late summer. Common and mostly harmless late in the season. A spray of 1 part milk to 9 parts water helps.',
-               '<strong>Fruits rot while small:</strong> poor pollination. Hand-pollinate.',
-               '<strong>Aphids</strong> under leaves.'],
-    tip: 'Don\'t wet the leaves when watering; it invites mildew. Point the drip at the base of the plant.',
-    varieties: 'Waltham Butternut, any "calabaza cacahuete" from the vivero' },
+  { name: 'Butternutpompoen', es: 'Calabaza (cacahuete)', level: 'easy', levelText: 'Makkelijk, vraagt ruimte',
+    stats: { Zon: 'Volle zon', Afstand: '1–1,5 m² per plant. Ranken worden 2–3 m', Water: '2–3× per week diep, aan de voet', Wanneer: 'Zaaien april–mei' },
+    steps: ['Maak een heuveltje en meng er een flinke schep compost of mest door. Pompoenen zijn veelvraten.',
+            'Zaai 2–3 zaden 2–3 cm diep per heuveltje. Houd de sterkste zaailing over zodra ze een paar bladeren hebben (of koop plantjes in mei).',
+            'Mulch dik. De grote bladeren beschaduwen de grond al snel zelf.',
+            'Vrouwelijke bloemen hebben een mini-pompoentje erachter. Verschrompelen die, bestuif dan vroeg in de ochtend met de hand: pluk een mannelijke bloem en dep die in de vrouwelijke.',
+            'Leg een tegel of plankje onder elke vrucht, zodat hij niet op vochtige grond ligt.'],
+    harvest: 'September–oktober, als de schil beige is, je er met je nagel geen deuk in krijgt, en de steel droog en kurkachtig is. Snijd af met 5 cm steel, laat 1–2 weken in de zon uitharden, en hij blijft 3–6 maanden goed.',
+    problems: ['<strong>Echte meeldauw:</strong> wit poeder op de bladeren eind zomer. Komt vaak voor en is laat in het seizoen meestal onschuldig. Spuiten met 1 deel melk op 9 delen water helpt.',
+               '<strong>Vruchtjes rotten terwijl ze klein zijn:</strong> slechte bestuiving. Bestuif met de hand.',
+               '<strong>Bladluis</strong> onder de bladeren.'],
+    tip: 'Maak de bladeren niet nat bij het water geven, dat lokt meeldauw uit. Richt de druppelaar op de voet van de plant.',
+    varieties: 'Waltham Butternut, of eender welke "calabaza cacahuete" uit de vivero' },
 
-  { name: 'Lettuce', es: 'Lechuga', level: 'easy', levelText: 'Easiest. Start here',
-    stats: { Sun: 'Full sun in winter, some shade from May', Spacing: '25–30 cm', Water: 'Little and often (shallow roots)', When: 'Plant October–April' },
-    steps: ['Easiest: buy a tray of young plants (<em>plantones</em>). They\'re cheap and sold everywhere in autumn.',
-            'Plant so the base of the leaves sits <strong>at</strong> soil level. Buried too deep, it rots.',
-            'Plant just a few every 2–3 weeks rather than all at once, for a steady supply.',
-            'Protect from snails and slugs, especially after rain.'],
-    harvest: 'Cut the whole head when firm, or pick outer leaves from loose-leaf types for weeks. Harvest before it "bolts" (shoots up and turns bitter) as heat arrives in May.',
-    problems: ['<strong>Slugs and snails</strong>: the main enemy.',
-               '<strong>Bolting</strong> in heat. Grow lettuce in the cool season only.',
-               '<strong>Birds</strong> pecking seedlings. Cover with netting for the first weeks.'],
-    tip: 'This is your perfect first crop, and November is the perfect time. You could be eating your own salad by Christmas.',
-    varieties: 'Romana (cos), Hoja de roble (oak leaf, cut-and-come-again), Trocadero / Maravilla (butterhead), Cogollos (little gem)' },
+  { name: 'Sla', es: 'Lechuga', level: 'easy', levelText: 'Het makkelijkst. Begin hiermee',
+    stats: { Zon: 'Volle zon in de winter, wat schaduw vanaf mei', Afstand: '25–30 cm', Water: 'Weinig en vaak (ondiepe wortels)', Wanneer: 'Planten oktober–april' },
+    steps: ['Het makkelijkst: koop een bakje jonge plantjes (<em>plantones</em>). Ze zijn goedkoop en in de herfst overal te koop.',
+            'Plant zo dat de voet van de bladeren <strong>op</strong> de grond zit. Te diep geplant gaat hij rotten.',
+            'Plant telkens maar een paar stuks om de 2–3 weken in plaats van alles tegelijk, voor een constante oogst.',
+            'Bescherm tegen slakken, vooral na regen.'],
+    harvest: 'Snijd de hele krop als hij stevig is, of pluk wekenlang de buitenste bladeren van pluksla. Oogst voor ze "doorschiet" (de hoogte in gaat en bitter wordt) als de warmte in mei komt.',
+    problems: ['<strong>Slakken</strong>: de grootste vijand.',
+               '<strong>Doorschieten</strong> bij warmte. Kweek sla enkel in het koele seizoen.',
+               '<strong>Vogels</strong> die aan zaailingen pikken. Leg de eerste weken een net over.'],
+    tip: 'Dit is je perfecte eerste gewas, en november is het perfecte moment. Met Kerstmis kun je al je eigen sla eten.',
+    varieties: 'Romana (bindsla), Hoja de roble (eikenbladsla, pluksla), Trocadero / Maravilla (kropsla), Cogollos (little gem)' },
 
-  { name: 'Herbs', es: 'Hierbas aromáticas', level: 'easy', levelText: 'Easy',
-    stats: { Sun: 'Full sun (mint: light shade)', Spacing: '40–60 cm for shrubby herbs', Water: 'Very little once established', When: 'Plant Oct–Nov or Feb–Mar' },
-    steps: ['<strong>Rosemary, thyme, oregano, sage</strong> (<em>romero, tomillo, orégano, salvia</em>) grow wild on the Axarquía hills. They love poor, stony, well-drained soil and full sun.',
-            'Plant them in autumn so winter rain establishes the roots; after the first year they need almost no water.',
-            '<strong>Mint</strong> (<em>hierbabuena</em>): always in a pot (it takes over), kept moist and in light shade.',
-            '<strong>Parsley and coriander</strong> (<em>perejil, cilantro</em>) are cool-season herbs here. Sow Sept–March. Coriander bolts in heat.'],
-    harvest: 'Snip shrubby herbs year-round, never cutting more than a third at once or into the bare woody parts.',
-    problems: ['<strong>Too much water or fertiliser</strong> kills rosemary and thyme faster than neglect.',
-               '<strong>Coriander bolting</strong> in spring. Sow small batches often.'],
-    tip: 'Plant a rosemary and a thyme near the kitchen door this month. They\'re nearly indestructible and you\'ll use them constantly.',
-    varieties: 'Also great here: lemon verbena (hierba luisa), chives, bay (laurel)' },
+  { name: 'Kruiden', es: 'Hierbas aromáticas', level: 'easy', levelText: 'Makkelijk',
+    stats: { Zon: 'Volle zon (munt: lichte schaduw)', Afstand: '40–60 cm voor struikvormige kruiden', Water: 'Heel weinig eens ze aangeslagen zijn', Wanneer: 'Planten okt–nov of feb–mrt' },
+    steps: ['<strong>Rozemarijn, tijm, oregano, salie</strong> (<em>romero, tomillo, orégano, salvia</em>) groeien wild op de heuvels van de Axarquía. Ze houden van arme, steenachtige, goed doorlatende grond en volle zon.',
+            'Plant ze in de herfst, zodat de winterregen de wortels laat aanslaan; na het eerste jaar hebben ze bijna geen water meer nodig.',
+            '<strong>Munt</strong> (<em>hierbabuena</em>): altijd in een pot (hij woekert), vochtig en in lichte schaduw.',
+            '<strong>Peterselie en koriander</strong> (<em>perejil, cilantro</em>) zijn hier kruiden voor het koele seizoen. Zaai van september tot maart. Koriander schiet door bij warmte.'],
+    harvest: 'Knip struikvormige kruiden het hele jaar door, maar nooit meer dan een derde tegelijk en nooit in het kale, houtige deel.',
+    problems: ['<strong>Te veel water of mest</strong> doodt rozemarijn en tijm sneller dan verwaarlozing.',
+               '<strong>Koriander die doorschiet</strong> in de lente. Zaai vaak kleine hoeveelheden.'],
+    tip: 'Plant deze maand een rozemarijn en een tijm bij de keukendeur. Ze zijn bijna onverwoestbaar en je gebruikt ze constant.',
+    varieties: 'Ook goed hier: citroenverbena (hierba luisa), bieslook, laurier (laurel)' },
 ];
 
 function renderCrops() {
@@ -604,33 +604,33 @@ function renderCrops() {
       </header>
       <div class="es">${c.es}</div>
       <dl class="stats">${Object.entries(c.stats).map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
-      <h4>How to grow</h4>
+      <h4>Zo kweek je het</h4>
       <ol>${c.steps.map(s => `<li>${s}</li>`).join('')}</ol>
-      <h4>When it's ready</h4>
+      <h4>Wanneer is het klaar</h4>
       <p style="font-size:.94rem;margin:0">${c.harvest}</p>
-      <h4>What goes wrong</h4>
+      <h4>Wat er misgaat</h4>
       <ul>${c.problems.map(s => `<li>${s}</li>`).join('')}</ul>
-      <h4>Varieties to look for</h4>
+      <h4>Rassen om naar te zoeken</h4>
       <p style="font-size:.94rem;margin:0">${c.varieties}</p>
-      <div class="tip"><strong>Beginner tip:</strong> ${c.tip}</div>
+      <div class="tip"><strong>Tip voor beginners:</strong> ${c.tip}</div>
     </article>`).join('');
 }
 
-/* ---------- Checklist (saved in browser) ---------- */
+/* ---------- Checklist (bewaard in de browser) ---------- */
 const CHECKS = [
-  'Choose a sunny spot near a tap (6+ hours sun)',
-  'Build or buy one raised bed (~1.2 × 2.4 m), or get 4–5 large pots (30+ litres)',
-  'Fill/enrich it with compost or well-rotted manure (estiércol)',
-  'Fence it if wild boar or rabbits are around',
-  'Buy basic tools: trowel, hand fork, watering can, gloves, a hose',
-  'Plant your first lettuces and a rosemary + thyme',
-  'Plant garlic and sow broad beans (Nov) for an easy spring harvest',
-  'Start a compost pile or bin for kitchen scraps and garden waste',
-  'Buy straw (paja) for mulching',
-  'Set up drip irrigation with a timer before April',
-  'Buy seed potatoes in January',
-  'Buy tomato and basil plants in March–April',
-  'Sow butternut in April–May',
+  'Kies een zonnig plekje bij een kraan (6+ uur zon)',
+  'Bouw of koop één verhoogde bak (~1,2 × 2,4 m), of neem 4–5 grote potten (30+ liter)',
+  'Vul of verrijk hem met compost of goed verteerde mest (estiércol)',
+  'Zet er een hek rond als er wilde zwijnen of konijnen in de buurt zijn',
+  'Koop basisgereedschap: plantschepje, handvork, gieter, handschoenen, een tuinslang',
+  'Plant je eerste sla en een rozemarijn + tijm',
+  'Plant knoflook en zaai tuinbonen (nov) voor een makkelijke oogst in de lente',
+  'Begin een composthoop of -bak voor keukenafval en tuinafval',
+  'Koop stro (paja) om te mulchen',
+  'Leg voor april druppelbevloeiing met een timer aan',
+  'Koop pootaardappelen in januari',
+  'Koop tomaten- en basilicumplantjes in maart–april',
+  'Zaai butternut in april–mei',
 ];
 const STORE_KEY = 'huerto-vinuela-checklist';
 function loadChecks() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch { return {}; } }
@@ -642,7 +642,7 @@ function renderChecklist() {
     <li><input type="checkbox" id="ck${i}" data-i="${i}" ${state[i] ? 'checked' : ''}><label for="ck${i}">${c}</label></li>`).join('');
   const update = () => {
     const done = CHECKS.filter((_, i) => document.getElementById('ck' + i).checked).length;
-    document.getElementById('progressLabel').textContent = `${done} of ${CHECKS.length} done`;
+    document.getElementById('progressLabel').textContent = `${done} van ${CHECKS.length} gedaan`;
     document.getElementById('progressBar').style.width = (done / CHECKS.length * 100) + '%';
   };
   ul.onchange = e => {
@@ -651,60 +651,60 @@ function renderChecklist() {
   update();
 }
 
-/* ---------- Glossary ---------- */
+/* ---------- Woordenlijst ---------- */
 const WORDS = [
-  ['huerto', 'vegetable garden'], ['vivero', 'plant nursery / garden centre'], ['plantón (plantones)', 'young plant(s), seedlings'],
-  ['semilla', 'seed'], ['patata de siembra', 'seed potato'], ['abono', 'fertiliser'], ['estiércol', 'manure'],
-  ['compost / mantillo', 'compost / potting compost'], ['sustrato', 'potting soil'], ['riego por goteo', 'drip irrigation'],
-  ['programador de riego', 'irrigation timer'], ['acolchado', 'mulch'], ['paja', 'straw'], ['malla de sombreo', 'shade net'],
-  ['caña / tutor', 'cane / stake'], ['entutorar', 'to stake / tie up'], ['aporcar', 'to earth up (potatoes)'],
-  ['chupones', 'tomato side shoots'], ['espigarse', 'to bolt (go to seed)'], ['bancal', 'raised bed / terrace'],
-  ['azada', 'hoe'], ['regadera', 'watering can'], ['caracol / babosa', 'snail / slug'], ['pulgón', 'aphid'],
-  ['mosca blanca', 'whitefly'], ['oídio', 'powdery mildew'], ['mildiu', 'downy mildew / blight'], ['jabalí', 'wild boar'],
+  ['huerto', 'moestuin'], ['vivero', 'kwekerij / tuincentrum'], ['plantón (plantones)', 'jonge plant(jes), zaailingen'],
+  ['semilla', 'zaad'], ['patata de siembra', 'pootaardappel'], ['abono', 'meststof'], ['estiércol', 'mest'],
+  ['compost / mantillo', 'compost / potgrond'], ['sustrato', 'potgrond'], ['riego por goteo', 'druppelbevloeiing'],
+  ['programador de riego', 'bevloeiingstimer'], ['acolchado', 'mulch'], ['paja', 'stro'], ['malla de sombreo', 'schaduwnet'],
+  ['caña / tutor', 'stok / steunpaal'], ['entutorar', 'opbinden / steunen'], ['aporcar', 'aanaarden (aardappelen)'],
+  ['chupones', 'dieven (zijscheuten van tomaat)'], ['espigarse', 'doorschieten'], ['bancal', 'verhoogde bak / terras'],
+  ['azada', 'schoffel'], ['regadera', 'gieter'], ['caracol / babosa', 'huisjesslak / naaktslak'], ['pulgón', 'bladluis'],
+  ['mosca blanca', 'witte vlieg'], ['oídio', 'echte meeldauw'], ['mildiu', 'valse meeldauw / phytophthora'], ['jabalí', 'wild zwijn'],
 ];
 function renderGloss() {
-  document.getElementById('gloss').innerHTML = WORDS.map(([es, en]) => `<div><dt>${es}</dt><dd>${en}</dd></div>`).join('');
+  document.getElementById('gloss').innerHTML = WORDS.map(([es, nl]) => `<div><dt>${es}</dt><dd>${nl}</dd></div>`).join('');
 }
 
-/* ---------- Pot calculator ---------- */
-// Minimum practical soil volume (litres) and depth (cm) per plant, for a hot climate.
+/* ---------- Potcalculator ---------- */
+// Minimaal praktisch volume aarde (liter) en diepte (cm) per plant, voor een warm klimaat.
 const POT_NEEDS = [
-  { name: 'Thyme', l: 3, d: 15, note: '1 plant' },
-  { name: 'Basil', l: 4, d: 20, note: '1 plant' },
-  { name: 'Lettuce', l: 3, d: 15, note: 'per head' },
-  { name: 'Parsley / coriander', l: 4, d: 20, note: 'a small clump' },
-  { name: 'Mint', l: 10, d: 25, note: 'on its own' },
-  { name: 'Rosemary', l: 12, d: 30, note: '1 plant' },
-  { name: 'Cherry tomato', l: 20, d: 30, note: '1 plant' },
-  { name: 'Large tomato', l: 30, d: 35, note: '1 plant' },
-  { name: 'Potatoes', l: 40, d: 40, note: '3–4 seed potatoes' },
-  { name: 'Butternut', l: 60, d: 40, note: '1 plant, hard work in a pot' },
+  { name: 'Tijm', l: 3, d: 15, note: '1 plant' },
+  { name: 'Basilicum', l: 4, d: 20, note: '1 plant' },
+  { name: 'Sla', l: 3, d: 15, note: 'per krop' },
+  { name: 'Peterselie / koriander', l: 4, d: 20, note: 'een kleine pol' },
+  { name: 'Munt', l: 10, d: 25, note: 'apart' },
+  { name: 'Rozemarijn', l: 12, d: 30, note: '1 plant' },
+  { name: 'Kerstomaat', l: 20, d: 30, note: '1 plant' },
+  { name: 'Grote tomaat', l: 30, d: 35, note: '1 plant' },
+  { name: 'Aardappelen', l: 40, d: 40, note: '3–4 pootaardappelen' },
+  { name: 'Butternut', l: 60, d: 40, note: '1 plant, lastig in een pot' },
 ];
 function renderPot() {
   const v = id => Math.max(0, +document.getElementById(id).value || 0);
   const round = document.getElementById('potShape').value === 'round';
-  ['lblDia'].forEach(id => document.getElementById(id).hidden = !round);
+  document.getElementById('lblDia').hidden = !round;
   ['lblLen', 'lblWid'].forEach(id => document.getElementById(id).hidden = round);
   const depth = v('potDep');
   const cm3 = round ? Math.PI * (v('potDia') / 2) ** 2 * depth : v('potLen') * v('potWid') * depth;
-  // Real pots taper and are not filled to the brim, so take ~80% of the geometric volume.
+  // Echte potten lopen taps toe en zitten niet tot de rand vol, dus neem ~80% van het geometrische volume.
   const litres = Math.round(cm3 / 1000 * 0.8);
   const rows = POT_NEEDS.map(c => {
     const ok = litres >= c.l && depth >= c.d;
     const count = ok ? Math.floor(litres / c.l) : 0;
-    const what = !ok ? (depth < c.d ? `needs ${c.d} cm deep` : `needs ${c.l} L`)
-      : (c.note === 'per head' ? `fits ~${count}` : c.note);
+    const what = !ok ? (depth < c.d ? `moet ${c.d} cm diep zijn` : `heeft ${c.l} L nodig`)
+      : (c.note === 'per krop' ? `past ~${count}` : c.note);
     return `<li><span>${c.name}</span><span class="${ok ? 'fit-yes' : 'fit-no'}">${ok ? '✓ ' : ''}${what}</span></li>`;
   }).join('');
   document.getElementById('potResult').innerHTML =
-    `<div class="small muted">Holds roughly</div><div class="pot-vol">${litres} litres</div>
-     <div class="small muted">of potting soil (allowing for taper and a gap at the top)</div>
+    `<div class="small muted">Inhoud ongeveer</div><div class="pot-vol">${litres} liter</div>
+     <div class="small muted">potgrond (rekening houdend met de tapse vorm en wat ruimte bovenaan)</div>
      <ul class="fit-list">${rows}</ul>`;
 }
 document.querySelector('.pot-form').addEventListener('input', renderPot);
 renderPot();
 
-/* ---------- Theme toggle ---------- */
+/* ---------- Thema-knop ---------- */
 (function theme() {
   const root = document.documentElement;
   let saved = null;
